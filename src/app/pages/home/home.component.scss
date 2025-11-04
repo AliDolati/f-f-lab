@@ -1,0 +1,65 @@
+.hero {
+  background: url('/assets/images/lab-bg.jpg') center/cover no-repeat;
+  position: relative;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+
+  .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 6rem 1rem;
+    border-radius: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    opacity: 0.9;
+    font-size: 1.1rem;
+  }
+
+  button {
+    margin-top: 1rem;
+    background: #00a2c7;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+  }
+}
+
+.services {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+  h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #0077b6;
+  }
+
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .service-item {
+    background: #f6f8fb;
+    padding: 1.2rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.2s ease;
+    &:hover {
+      transform: translateY(-4px);
+    }
+  }
+}

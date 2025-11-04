@@ -1,0 +1,31 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "f-f-lab Digital Dental Laboratory",
+    "subtitle": "Leading in digital crown and prosthetic production with high precision",
+    "button": "Learn more"
+  },
+  "about": {
+    "title": "About the Laboratory",
+    "text": "We use modern digital technologies to provide high-quality dental lab services."
+  },
+  "services": {
+    "title": "Our Services",
+    "design": "Digital Crown Design",
+    "designDesc": "Using CAD/CAM software for precise and customized designs.",
+    "scan": "3D Scanning",
+    "scanDesc": "Accurate digital modeling to reduce mistakes.",
+    "print": "3D Printing",
+    "printDesc": "Production with industrial printers and quality materials."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "text": "Get in touch for collaboration and orders."
+  },
+  "footer": "© 2025 All rights reserved for f-f-lab."
+}
