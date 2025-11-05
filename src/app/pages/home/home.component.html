@@ -1,40 +1,38 @@
-<!-- Hero Section -->
-<section class="hero">
-  <div class="hero-text">
-    <h1>{{ heroTitle }}</h1>
-    <p>{{ heroSubtitle }}</p>
-    <button mat-raised-button color="primary">تماس با ما</button>
+<div class="hero-section">
+  <div class="hero-content">
+    <h1>Welcome to Dental Lab</h1>
+    <p>High-quality dental prosthetics with cutting-edge technology</p>
+    <button mat-raised-button color="primary">Get Started</button>
   </div>
   <div class="hero-slider">
-   <img src="assets/slider/image1.jpg" alt="Slide 1">
-    <button class="prev" (click)="prevSlide()">&#10094;</button>
-    <button class="next" (click)="nextSlide()">&#10095;</button>
+    <img src="assets/images/slider1.jpg" alt="Dental Lab Image 1" />
+    <img src="assets/images/slider2.jpg" alt="Dental Lab Image 2" />
+    <img src="assets/images/slider3.jpg" alt="Dental Lab Image 3" />
   </div>
-</section>
-
-<!-- Features Section -->
-<section class="features">
-  <div class="feature-card" *ngFor="let f of features">
-    <mat-icon>{{ f.icon }}</mat-icon>
-    <h3>{{ f.title }}</h3>
-    <p>{{ f.desc }}</p>
-  </div>
-</section>
-
-<!-- CTA Section -->
-<section class="cta">
-  <h2>همین حالا با ما تماس بگیرید</h2>
-  <button mat-raised-button color="accent">تماس</button>
-</section>
-<section class="hero-slider">
-  <!-- اسلایدر عکس با دکمه‌ها -->
-</section>
+</div>
 
 <section class="services">
-  <!-- معرفی خدمات با کارت‌های Material -->
+  <h2>Our Services</h2>
+  <div class="service-cards">
+    <div class="card">
+      <mat-icon>medical_services</mat-icon>
+      <h3>Custom Crowns</h3>
+      <p>Precision-crafted crowns for every patient.</p>
+    </div>
+    <div class="card">
+      <mat-icon>healing</mat-icon>
+      <h3>Implants</h3>
+      <p>Durable and aesthetic dental implants.</p>
+    </div>
+    <div class="card">
+      <mat-icon>science</mat-icon>
+      <h3>Digital Dentistry</h3>
+      <p>Advanced CAD/CAM technologies for perfect fits.</p>
+    </div>
+  </div>
 </section>
 
-<section class="about-brief">
-  <!-- معرفی کوتاه لابراتوار -->
+<section class="about">
+  <h2>Why Choose Us?</h2>
+  <p>We combine experience, technology, and passion for dental health.</p>
 </section>
-
