@@ -1,38 +1,30 @@
 <div class="hero-section">
-  <div class="hero-content">
-    <h1>Welcome to Dental Lab</h1>
-    <p>High-quality dental prosthetics with cutting-edge technology</p>
-    <button mat-raised-button color="primary">Get Started</button>
-  </div>
-  <div class="hero-slider">
-    <img src="assets/images/slider1.jpg" alt="Dental Lab Image 1" />
-    <img src="assets/images/slider2.jpg" alt="Dental Lab Image 2" />
-    <img src="assets/images/slider3.jpg" alt="Dental Lab Image 3" />
+  <div class="slider">
+    <div class="slide" *ngFor="let img of ['assets/slider1.jpg','assets/slider2.jpg','assets/slider3.jpg']">
+      <img [src]="img" alt="Banner" />
+      <div class="overlay">
+        <h1>لابراتوار نوآدنتال</h1>
+        <p>ساخت روکش‌ها و پروتزهای دندانی با فناوری دیجیتال</p>
+        <button mat-raised-button color="primary">مشاهده خدمات</button>
+      </div>
+    </div>
   </div>
 </div>
 
-<section class="services">
-  <h2>Our Services</h2>
-  <div class="service-cards">
-    <div class="card">
-      <mat-icon>medical_services</mat-icon>
-      <h3>Custom Crowns</h3>
-      <p>Precision-crafted crowns for every patient.</p>
-    </div>
-    <div class="card">
-      <mat-icon>healing</mat-icon>
-      <h3>Implants</h3>
-      <p>Durable and aesthetic dental implants.</p>
-    </div>
-    <div class="card">
-      <mat-icon>science</mat-icon>
-      <h3>Digital Dentistry</h3>
-      <p>Advanced CAD/CAM technologies for perfect fits.</p>
-    </div>
+<div class="features">
+  <div class="feature-card">
+    <mat-icon>precision_manufacturing</mat-icon>
+    <h3>فناوری دیجیتال</h3>
+    <p>ساخت دقیق و سریع روکش‌ها و پروتزهای دندانی</p>
   </div>
-</section>
-
-<section class="about">
-  <h2>Why Choose Us?</h2>
-  <p>We combine experience, technology, and passion for dental health.</p>
-</section>
+  <div class="feature-card">
+    <mat-icon>verified_user</mat-icon>
+    <h3>کیفیت تضمینی</h3>
+    <p>مواد اولیه با کیفیت بالا و استانداردهای جهانی</p>
+  </div>
+  <div class="feature-card">
+    <mat-icon>support_agent</mat-icon>
+    <h3>پشتیبانی تخصصی</h3>
+    <p>مشاوره و پاسخگویی به دندانپزشکان و مراکز درمانی</p>
+  </div>
+</div>
