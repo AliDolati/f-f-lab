@@ -1,19 +1,11 @@
-<div class="hero-section">
-  <div class="slider-container">
-    <div class="slide" *ngFor="let img of sliderImages; let i = index" [class.active]="i === currentSlide">
-      <img [src]="img" alt="Banner" />
-      <div class="overlay">
-        <h1>لابراتوار نوآدنتال</h1>
-        <p>ساخت روکش‌ها و پروتزهای دندانی با فناوری دیجیتال</p>
-        <button mat-raised-button color="primary">مشاهده خدمات</button>
-      </div>
-    </div>
-    <button class="prev" (click)="prevSlide()">&#10094;</button>
-    <button class="next" (click)="nextSlide()">&#10095;</button>
-  </div>
-</div>
+<app-header></app-header>
 
-<!-- اضافه کردن بخش‌های Standalone Components -->
+<app-hero></app-hero>
+
 <app-features></app-features>
+
 <app-testimonials></app-testimonials>
+
 <app-gallery></app-gallery>
+
+<app-footer></app-footer>

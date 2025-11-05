@@ -1,11 +1,5 @@
-<section class="gallery-section">
-  <h2 class="section-title">نمونه کارها</h2>
-  <div class="gallery-grid">
-    <div class="gallery-item" *ngFor="let image of images">
-      <img [src]="image.src" [alt]="image.alt" loading="lazy" />
-      <div class="overlay">
-        <span>{{ image.alt }}</span>
-      </div>
-    </div>
+<div class="gallery-grid">
+  <div class="gallery-item" *ngFor="let img of images">
+    <img [src]="img" alt="Gallery Image">
   </div>
-</section>
+</div>

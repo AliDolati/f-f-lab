@@ -3,6 +3,12 @@ import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 
+// مسیر جدید و درست برای header و footer
+import { HeaderComponent } from '../../shared/header/header.component';
+import { FooterComponent } from '../../shared/footer/footer.component';
+
+// سایر بخش‌های هوم پیج
+import { HeroComponent } from '../hero/hero.component';
 import { FeaturesComponent } from '../features/features.component';
 import { TestimonialsComponent } from '../testimonials/testimonials.component';
 import { GalleryComponent } from '../gallery/gallery.component';
@@ -14,26 +20,14 @@ import { GalleryComponent } from '../gallery/gallery.component';
     CommonModule,
     MatButtonModule,
     MatIconModule,
+    HeaderComponent,
+    HeroComponent,
     FeaturesComponent,
     TestimonialsComponent,
-    GalleryComponent
+    GalleryComponent,
+    FooterComponent
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
-  sliderImages: string[] = [
-    'assets/slider1.jpg',
-    'assets/slider2.jpg',
-    'assets/slider3.jpg'
-  ];
-  currentSlide = 0;
-
-  nextSlide() {
-    this.currentSlide = (this.currentSlide + 1) % this.sliderImages.length;
-  }
-
-  prevSlide() {
-    this.currentSlide = (this.currentSlide - 1 + this.sliderImages.length) % this.sliderImages.length;
-  }
-}
+export class HomeComponent {}

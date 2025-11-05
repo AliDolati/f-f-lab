@@ -1,15 +1,9 @@
-<section class="testimonials">
-  <h2>نظرات پزشکان</h2>
-
-  <mat-card class="testimonial-card" *ngIf="testimonials.length">
-    <img [src]="testimonials[currentIndex].image" alt="Customer" class="client-image">
-    <p class="text">"{{ testimonials[currentIndex].text }}"</p>
-    <h3>{{ testimonials[currentIndex].name }}</h3>
-    <span class="role">{{ testimonials[currentIndex].role }}</span>
-
-    <div class="controls">
-      <button mat-icon-button (click)="prev()"><mat-icon>chevron_left</mat-icon></button>
-      <button mat-icon-button (click)="next()"><mat-icon>chevron_right</mat-icon></button>
-    </div>
-  </mat-card>
-</section>
+<div class="testimonials-section">
+  <div class="testimonial" *ngFor="let t of testimonials; let i = index" [class.active]="i === currentTestimonial">
+    <img [src]="t.avatar" alt="{{t.name}}">
+    <p>{{t.text}}</p>
+    <h4>{{t.name}}</h4>
+  </div>
+  <button class="prev" (click)="prevTestimonial()">&#10094;</button>
+  <button class="next" (click)="nextTestimonial()">&#10095;</button>
+</div>

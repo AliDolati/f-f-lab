@@ -10,11 +10,11 @@ import { CommonModule } from '@angular/common';
 })
 export class GalleryComponent {
   images = [
-    { src: 'assets/gallery1.jpg', alt: 'نمونه کار ۱' },
-    { src: 'assets/gallery2.jpg', alt: 'نمونه کار ۲' },
-    { src: 'assets/gallery3.jpg', alt: 'نمونه کار ۳' },
-    { src: 'assets/gallery4.jpg', alt: 'نمونه کار ۴' },
-    { src: 'assets/gallery5.jpg', alt: 'نمونه کار ۵' },
-    { src: 'assets/gallery6.jpg', alt: 'نمونه کار ۶' }
+    'assets/gallery1.jpg',
+    'assets/gallery2.jpg',
+    'assets/gallery3.jpg',
+    'assets/gallery4.jpg',
+    'assets/gallery5.jpg',
+    'assets/gallery6.jpg'
   ];
 }
