@@ -1,16 +1,80 @@
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
-  margin: 50px 0;
+.gallery-section {
+  padding: 60px 5%;
+  background: #fafafa;
+  text-align: center;
 }
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+  font-weight: 600;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: 10px;
+  gap: 16px;
+  justify-items: center;
+}
+
+.gallery-item {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+}
+
 .gallery-item img {
   width: 100%;
-  height: 200px;
+  display: block;
   object-fit: cover;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  animation: fadeIn 0.8s ease forwards;
+  border-radius: 12px;
 }
-.gallery-item img:hover {
-  transform: scale(1.05);
-  opacity: 0.9;
+
+/* افکت تار و نمایش عنوان */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: opacity 0.3s ease;
+  border-radius: 12px;
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+/* Fade-in برای عکس‌ها */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(1.03);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* واکنش‌گرا */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
 }
