@@ -1,20 +1,40 @@
+<!-- Hero Section -->
 <section class="hero">
-  <h1>لابراتوار دیجیتال ساخت دندان</h1>
-  <p>طراحی، ساخت و تحویل سریع‌ترین و دقیق‌ترین روکش‌های دندانی</p>
-  <button>مشاهده خدمات</button>
+  <div class="hero-text">
+    <h1>{{ heroTitle }}</h1>
+    <p>{{ heroSubtitle }}</p>
+    <button mat-raised-button color="primary">تماس با ما</button>
+  </div>
+  <div class="hero-slider">
+   <img src="assets/slider/image1.jpg" alt="Slide 1">
+    <button class="prev" (click)="prevSlide()">&#10094;</button>
+    <button class="next" (click)="nextSlide()">&#10095;</button>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="features">
+  <div class="feature-card" *ngFor="let f of features">
+    <mat-icon>{{ f.icon }}</mat-icon>
+    <h3>{{ f.title }}</h3>
+    <p>{{ f.desc }}</p>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta">
+  <h2>همین حالا با ما تماس بگیرید</h2>
+  <button mat-raised-button color="accent">تماس</button>
+</section>
+<section class="hero-slider">
+  <!-- اسلایدر عکس با دکمه‌ها -->
 </section>
 
 <section class="services">
-  <div class="service-card">
-    <h3>روکش‌های تمام سرامیک</h3>
-    <p>زیبایی و دوام در بالاترین سطح</p>
-  </div>
-  <div class="service-card">
-    <h3>ایمپلنت دیجیتال</h3>
-    <p>دقت بالا با طراحی سه‌بعدی</p>
-  </div>
-  <div class="service-card">
-    <h3>طراحی CAD/CAM</h3>
-    <p>با جدیدترین فناوری لیزری</p>
-  </div>
+  <!-- معرفی خدمات با کارت‌های Material -->
 </section>
+
+<section class="about-brief">
+  <!-- معرفی کوتاه لابراتوار -->
+</section>
+
