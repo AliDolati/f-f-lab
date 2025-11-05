@@ -1,0 +1,44 @@
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #005baa, #0078d4);
+  color: white;
+  border-radius: 12px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 6px;
+  background: #fff;
+  color: #0078d4;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 25px;
+  width: 280px;
+  text-align: center;
+}
