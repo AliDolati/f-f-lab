@@ -1,9 +1,15 @@
-<div class="testimonials">
-  <button (click)="prev()">&#10094;</button>
-  <div class="testimonial-card">
-    <img [src]="testimonials[current].img" alt="{{testimonials[current].name}}" />
-    <p>{{testimonials[current].text}}</p>
-    <h4>{{testimonials[current].name}}</h4>
-  </div>
-  <button (click)="next()">&#10095;</button>
-</div>
+<section class="testimonials">
+  <h2>نظرات پزشکان</h2>
+
+  <mat-card class="testimonial-card" *ngIf="testimonials.length">
+    <img [src]="testimonials[currentIndex].image" alt="Customer" class="client-image">
+    <p class="text">"{{ testimonials[currentIndex].text }}"</p>
+    <h3>{{ testimonials[currentIndex].name }}</h3>
+    <span class="role">{{ testimonials[currentIndex].role }}</span>
+
+    <div class="controls">
+      <button mat-icon-button (click)="prev()"><mat-icon>chevron_left</mat-icon></button>
+      <button mat-icon-button (click)="next()"><mat-icon>chevron_right</mat-icon></button>
+    </div>
+  </mat-card>
+</section>
