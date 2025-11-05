@@ -1,0 +1,9 @@
+<div class="testimonials">
+  <button (click)="prev()">&#10094;</button>
+  <div class="testimonial-card">
+    <img [src]="testimonials[current].img" alt="{{testimonials[current].name}}" />
+    <p>{{testimonials[current].text}}</p>
+    <h4>{{testimonials[current].name}}</h4>
+  </div>
+  <button (click)="next()">&#10095;</button>
+</div>

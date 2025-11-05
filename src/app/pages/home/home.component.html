@@ -1,33 +1,19 @@
 <div class="hero-section">
-  <div class="slider">
-    <div class="slide" *ngFor="let img of ['assets/slider1.jpg','assets/slider2.jpg','assets/slider3.jpg']">
-  <img [src]="'assets/slider2.jpg'" alt="Banner" />
-  <img [src]="'assets/slider3.jpg'" alt="Banner" />
- <img [src]="'assets/slider1.jpg'" alt="Banner" />
-
+  <div class="slider-container">
+    <div class="slide" *ngFor="let img of sliderImages; let i = index" [class.active]="i === currentSlide">
+      <img [src]="img" alt="Banner" />
       <div class="overlay">
         <h1>لابراتوار نوآدنتال</h1>
         <p>ساخت روکش‌ها و پروتزهای دندانی با فناوری دیجیتال</p>
         <button mat-raised-button color="primary">مشاهده خدمات</button>
       </div>
     </div>
+    <button class="prev" (click)="prevSlide()">&#10094;</button>
+    <button class="next" (click)="nextSlide()">&#10095;</button>
   </div>
 </div>
 
-<div class="features">
-  <div class="feature-card">
-    <mat-icon>precision_manufacturing</mat-icon>
-    <h3>فناوری دیجیتال</h3>
-    <p>ساخت دقیق و سریع روکش‌ها و پروتزهای دندانی</p>
-  </div>
-  <div class="feature-card">
-    <mat-icon>verified_user</mat-icon>
-    <h3>کیفیت تضمینی</h3>
-    <p>مواد اولیه با کیفیت بالا و استانداردهای جهانی</p>
-  </div>
-  <div class="feature-card">
-    <mat-icon>support_agent</mat-icon>
-    <h3>پشتیبانی تخصصی</h3>
-    <p>مشاوره و پاسخگویی به دندانپزشکان و مراکز درمانی</p>
-  </div>
-</div>
+<!-- اضافه کردن بخش‌های Standalone Components -->
+<app-features></app-features>
+<app-testimonials></app-testimonials>
+<app-gallery></app-gallery>
